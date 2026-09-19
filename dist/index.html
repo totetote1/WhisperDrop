@@ -2,7 +2,7 @@
 <html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="音声を外部送信せず、ブラウザ内で文字起こし。無料でTXT・SRTに保存できるWhisperDrop。"><title>WhisperDrop — 音声を、ことばに。</title><link rel="icon" href="favicon.svg"><link rel="stylesheet" href="style.css"></head>
 <body>
 <header><a class="brand" href="./" aria-label="WhisperDrop ホーム"><span class="brand-icon" aria-hidden="true">▥</span>Whisper<span>Drop</span><span class="beta">BETA</span></a><button class="quiet" id="help">使い方 <span aria-hidden="true">↗</span></button></header>
-<main><div class="intro"><div><p class="eyebrow">YOUR VOICE. YOUR DEVICE.</p><h1>音声を、<span>ことばに。</span></h1><p class="lead">ファイルを置くだけ。あなたの端末で、文字起こし。</p></div><div class="local-badge"><span aria-hidden="true">◇</span> 音声の外部送信なし</div></div>
+<main><div class="intro"><div><p class="eyebrow">YOUR VOICE. YOUR DEVICE.</p><h1>文字起こし料金は、<span>0円</span></h1><p class="lead">ファイルを置くだけ。あなたの端末で、文字起こし。</p></div><div class="local-badge"><span aria-hidden="true">◇</span> 音声の外部送信なし</div></div>
 <div class="workspace"><section class="input-panel" aria-labelledby="input-heading"><div class="section-title"><h2 id="input-heading"><span class="step">01</span> ファイルを選ぶ</h2><span class="small">音声 / 動画</span></div>
 <input id="file" type="file" accept="audio/*,video/*,.mp3,.wav,.m4a,.mp4,.mov,.aac,.flac,.webm" hidden>
 <button id="dropzone" class="dropzone"><span class="upload-icon" aria-hidden="true">↥</span><strong>ここにファイルをドロップ</strong><span>または <b>ファイルを選択</b></span><span class="formats">MP3 · WAV · M4A · MP4 · MOV ほか</span><span class="small">1ファイル・最大200MB / 60分</span></button>
@@ -19,7 +19,6 @@
 <div id="empty" class="empty"><div class="empty-icon" aria-hidden="true">≋</div><h3>ことばが、ここに届きます。</h3><p>ファイルを選んで文字起こしを始めると、<br>ここに結果が表示されます。</p><div class="empty-line" aria-hidden="true"></div><div class="empty-line short" aria-hidden="true"></div></div>
 <div id="text-panel" role="tabpanel" aria-labelledby="text-tab" hidden><label class="sr-only" for="transcript">文字起こしテキスト（編集可能）</label><textarea id="transcript" placeholder="文字起こし結果" spellcheck="false"></textarea></div><div id="subtitle-panel" role="tabpanel" aria-labelledby="subtitle-tab" hidden><div id="segments"></div></div>
 <div class="result-footer"><span id="count" class="small">TXT / SRT に対応</span><button id="copy" class="quiet" disabled>コピー</button><button id="txt" class="download" disabled>↓ TXT</button><button id="srt" class="download" disabled>↓ SRT</button></div><p id="notice" class="small notice" role="status" aria-live="polite"></p></section></div>
-<div class="assurances"><div><span aria-hidden="true">⌘</span><strong>あなたの端末で処理</strong><p>音声・テキストをサーバーに送りません。</p></div><div><span aria-hidden="true">∞</span><strong>文字起こし料金は、0円</strong><p>月額料金も、従量課金もありません。</p></div><div><span aria-hidden="true">↓</span><strong>使いやすい形式で保存</strong><p>文章はTXT、時間付き字幕はSRTで。</p></div></div>
 <footer><span>WhisperDrop</span><span>Powered by Whisper · Transformers.js</span><button class="quiet" id="privacy">プライバシー</button></footer></main>
 <dialog id="dialog"><div class="dialog-top"><h2 id="dialog-title"></h2><button id="close-dialog" class="icon-button" aria-label="閉じる">×</button></div><div id="dialog-body"></div></dialog>
 <script type="module" src="app.js"></script></body></html>
