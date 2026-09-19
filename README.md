@@ -24,6 +24,10 @@ SwiftUI・Homebrew・ffmpeg・whisper.cppの外部コマンド呼び出しは使
 
 ## Mac用ダウンロード版の起動・終了
 
+**[Mac用ZIPをダウンロード](https://github.com/totetote1/WhisperDrop/raw/refs/heads/main/downloads/WhisperDrop-Mac.zip)**
+
+解凍後はフォルダ内の「起動.command」をダブルクリックしてください。
+
 1. ZIPをダウンロードして、ダブルクリックで解凍します。
 2. 解凍した **WhisperDrop** フォルダを開きます。
 3. **「起動.command」をダブルクリック**します。
