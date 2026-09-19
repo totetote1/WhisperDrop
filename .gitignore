@@ -1,0 +1,11 @@
+.DS_Store
+.sites-runtime/
+node_modules/
+.env*
+*.mp3
+*.wav
+*.m4a
+*.mp4
+*.mov
+*.flac
+*.zip

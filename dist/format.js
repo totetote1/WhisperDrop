@@ -1,0 +1,3 @@
+export function clock(seconds){const value=Math.max(0,Math.floor(seconds||0));return [Math.floor(value/60),value%60].map(x=>String(x).padStart(2,'0')).join(':');}
+export function srtTime(seconds){const ms=Math.round(Math.max(0,seconds)*1000);return `${String(Math.floor(ms/3600000)).padStart(2,'0')}:${String(Math.floor(ms/60000)%60).padStart(2,'0')}:${String(Math.floor(ms/1000)%60).padStart(2,'0')},${String(ms%1000).padStart(3,'0')}`;}
+export function toSrt(chunks,duration){return chunks.filter(c=>c.text.trim()).map((c,i)=>{const start=Math.min(duration,Math.max(0,c.timestamp[0]??0));const end=Math.min(duration,Math.max(start,c.timestamp[1]??duration));return `${i+1}\n${srtTime(start)} --> ${srtTime(end)}\n${c.text.trim()}\n`;}).join('\n');}
